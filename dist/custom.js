@@ -51,6 +51,8 @@ $(function () {
             if (m<0)
                 {
                 $("#danger").show();
+                $("#warning").hide();
+                $("#info").hide();
                 }
             else
                 {
