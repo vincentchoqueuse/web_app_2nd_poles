@@ -26,7 +26,37 @@ $(function () {
                 series_poles.push([p_real,p_imag]);
                 series_poles.push([p_real,-p_imag]);
                 }
+
+                               
             chart_pz.series[0].update({data: series_poles}, true);
+                               
+            // test m
+            if (m<1)
+                {
+                $("#info").show();
+                }
+            else
+                {
+                $("#info").hide();
+                }
+            
+            if (m< 1./Math.sqrt(2))
+                {
+                $("#warning").show();
+                }
+            else
+                {
+                $("#warning").hide();
+                }
+            if (m<0)
+                {
+                $("#danger").show();
+                }
+            else
+                {
+                $("#danger").hide();
+                }
+        
             });
     
 

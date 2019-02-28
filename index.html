@@ -36,7 +36,7 @@
                               <form id="monformulaire">
                                   <div class="form-group">
                                       <label for="Inputw0">Natural Frequency w0 (rad/s)</label>
-                                      <input type="number" step="0.1" class="form-control" id="Inputw0" aria-describedby="w0Help" placeholder="Enter w0" value="1" min=-2 max=2>
+                                      <input type="number" step="0.1" class="form-control" id="Inputw0" aria-describedby="w0Help" placeholder="Enter w0" value="1" min=0 max=2>
                                   </div>
                                   <div class="form-group">
                                       <label for="Inputm">Damping Factor m</label>
@@ -47,10 +47,19 @@
                       </div>
                   </div>
                   <div class="col-9">
+
                       <nav>
                           <div class="nav nav-tabs" id="nav-tab" role="tablist">
                               <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Poles Zeros</a>
+                              <div style="padding-top:10px;padding-left: 20px;">
+                                  <span id="info" class="badge badge-pill badge-info">Overshoot</span>
+                                  <span id="warning" class="badge badge-pill badge-warning">Resonance</span>
+                                  <span id="danger" class="badge badge-pill badge-danger">Unstable </span>
+                                  
+                                  
+                              </div>
                           </div>
+                          
                       </nav>
                       <div class="tab-content" id="nav-tabContent">
                           <div align="center">
