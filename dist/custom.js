@@ -45,6 +45,6 @@ $(function () {
                    ],
           });
 
-     $("#monformulaire").trigger();
+     $("#monformulaire").trigger("change");
     
     });
