@@ -69,7 +69,7 @@ $(function () {
            chart: {type: 'line',resetZoomButton: {theme: {display: 'none'}},},
           xAxis: {title: {text: "Real Part"},type: "linear",gridLineWidth: 1, min:-2,max:2},
            yAxis: {title:{text:"Imaginary Part"},type: "linear",gridLineWidth: 1,  min:-2,max:2},
-           plotOptions: {scatter: {marker: { size: 12, symbol: 'x', states: { hover: { enabled: true, lineColor: 'rgb(100,100,100)'}}},
+           plotOptions: {scatter: {marker: { size: 12, symbol: 'cross', states: { hover: { enabled: true, lineColor: 'rgb(100,100,100)'}}},
                         tooltip: { headerFormat: '<b>{series.name}</b><br>', pointFormat: '{point.x}, {point.y}'}}
                     },
           navigation: {buttonOptions: {enabled: false}},
